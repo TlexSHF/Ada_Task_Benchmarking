@@ -1,4 +1,5 @@
 V "GNAT Lib v2021"
+A -O0
 A -gnatA
 A --RTS=C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\
 A -mfloat-abi=hard
@@ -12,6 +13,7 @@ A -mthumb
 A -mfloat-abi=hard
 A -mfpu=fpv4-sp-d16
 A -mcpu=cortex-m4
+A -g
 A -march=armv7e-m+fp
 P DB ZX
 
@@ -23,7 +25,7 @@ RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 RV NO_OBSOLESCENT_FEATURES
 
-U ada_main%b		b__main.adb		afef7762 OO PK IL
+U ada_main%b		b__main.adb		911a5dce OO PK IL
 Z system%s		system.ads		system.ali
 
 U ada_main%s		b__main.ads		f83fdd3d EE NE OO PK IL
@@ -31,8 +33,8 @@ W system%s		system.ads		system.ali
 W system.parameters%s	s-parame.adb		s-parame.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
-D b__main.ads		20230927153236 8d59ea92 ada_main%s
-D b__main.adb		20230927153236 22b69df0 ada_main%b
+D b__main.ads		20231002091854 8d59ea92 ada_main%s
+D b__main.adb		20231002091854 1c43b75c ada_main%b
 D system.ads		20230829154520 ad54c63c system%s
 D s-parame.ads		20230829154520 8e90778f system.parameters%s
 D s-secsta.ads		20230829154510 56a2861c system.secondary_stack%s
@@ -44,7 +46,7 @@ G c Z s b [main ada_main 25 14 none]
 G c Z b b [Tsec_default_sized_stacksBIP ada_main 37 4 none]
 G c Z b b [ada_main_program ada_main 192 14 none]
 X 1 b__main.ads
-6K9*ada_main 224l5 224e13 2|7b14 226l5 226t13
+6K9*ada_main 232l5 232e13 2|7b14 226l5 226t13
 9a4*GNAT_Version{string} 11r22 13r54
 13m4*GNAT_Version_Address{3|80M9} 14r22
 16a4*Ada_Main_Program_Name{string} 17r22 2|203r52
@@ -52,33 +54,33 @@ X 1 b__main.ads
 22U14*adafinal 23i<c,adafinal>22 2|44b14 58l8 58t16 210s7
 25U14*main 26i<c,main>22 2|195b14 212t7
 X 2 b__main.adb
-9i4 E062{short_integer} 9m46 9r46 136m7 136r15
-10i4 E005{short_integer} 10m46 10r46 130m7 130r15
-11i4 E060{short_integer} 11m46 11r46 132m7 132r15
-12i4 E012{short_integer} 12m46 12r46 140m7 140r15
-13i4 E099{short_integer} 13m46 13r46 139m7 139r15
-14i4 E097{short_integer} 14m46 14r46 138m7 138r15
-15i4 E142{short_integer} 15m46 15r46 142m7 142r15
-16i4 E149{short_integer} 16m46 16r46 144m7 144r15
-17i4 E147{short_integer} 17m46 17r46 146m7 146r15
-18i4 E151{short_integer} 18m46 18r46 148m7 148r15
-19i4 E146{short_integer} 19m46 19r46 151m7 151r15
-20i4 E186{short_integer} 20m46 20r46 153m7 153r15
-21i4 E153{short_integer} 21m46 21r46 155m7 155r15
+9i4 E106{short_integer} 9m46 9r46 136m7 136r15
+10i4 E097{short_integer} 10m46 10r46 130m7 130r15
+11i4 E095{short_integer} 11m46 11r46 132m7 132r15
+12i4 E022{short_integer} 12m46 12r46 140m7 140r15
+13i4 E049{short_integer} 13m46 13r46 139m7 139r15
+14i4 E047{short_integer} 14m46 14r46 138m7 138r15
+15i4 E144{short_integer} 15m46 15r46 142m7 142r15
+16i4 E151{short_integer} 16m46 16r46 144m7 144r15
+17i4 E149{short_integer} 17m46 17r46 146m7 146r15
+18i4 E153{short_integer} 18m46 18r46 148m7 148r15
+19i4 E148{short_integer} 19m46 19r46 151m7 151r15
+20i4 E006{short_integer} 20m46 20r46 153m7 153r15
+21i4 E155{short_integer} 21m46 21r46 155m7 155r15
 22i4 E192{short_integer} 22m46 22r46 157m7 157r15
-23i4 E144{short_integer} 23m46 23r46 159m7 159r15
-24i4 E176{short_integer} 24m46 24r46 161m7 161r15
-25i4 E169{short_integer} 25m46 25r46 163m7 163r15
-26i4 E180{short_integer} 26m46 26r46 165m7 165r15
-27i4 E135{short_integer} 27m46 27r46 168m7 168r15
-28i4 E164{short_integer} 28m46 28r46 169m7 169r15
-29i4 E167{short_integer} 29m46 29r46 172m7 172r15
-30i4 E171{short_integer} 30m46 30r46 175m7 175r15
-31i4 E174{short_integer} 31m46 31r46 178m7 178r15
-32i4 E178{short_integer} 32m46 32r46 181m7 181r15
-33i4 E125{short_integer} 33m46 33r46 184m7 184r15
-34i4 E182{short_integer} 34m46 34r46 186m7 186r15
-35i4 E184{short_integer} 35m46 35r46 189m7 189r15
+23i4 E146{short_integer} 23m46 23r46 159m7 159r15
+24i4 E178{short_integer} 24m46 24r46 161m7 161r15
+25i4 E171{short_integer} 25m46 25r46 163m7 163r15
+26i4 E182{short_integer} 26m46 26r46 165m7 165r15
+27i4 E137{short_integer} 27m46 27r46 168m7 168r15
+28i4 E166{short_integer} 28m46 28r46 169m7 169r15
+29i4 E169{short_integer} 29m46 29r46 172m7 172r15
+30i4 E173{short_integer} 30m46 30r46 175m7 175r15
+31i4 E176{short_integer} 31m46 31r46 178m7 178r15
+32i4 E180{short_integer} 32m46 32r46 181m7 181r15
+33i4 E127{short_integer} 33m46 33r46 184m7 184r15
+34i4 E184{short_integer} 34m46 34r46 186m7 186r15
+35i4 E186{short_integer} 35m46 35r46 189m7 189r15
 37a4 Sec_Default_Sized_Stacks(5|43R9) 125m32 125r32
 39a4 Local_Priority_Specific_Dispatching{string} 113r9
 40a4 Local_Interrupt_States{string} 116r27

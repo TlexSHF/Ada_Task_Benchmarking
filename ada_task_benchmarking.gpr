@@ -14,5 +14,9 @@ project Ada_Task_Benchmarking is
       for Communication_Protocol use "remote";
    end Ide;
 
+   package Compiler is
+      for Switches ("ada") use ("-g", "-O0", "-gnat2022");
+   end Compiler;
+
 end Ada_Task_Benchmarking;
 
